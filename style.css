@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Vesper+Libre:wght@400;500;700&display=swap');
+
+body {
+  font-family: "Vesper Libre", sans-serif;
+  font-size: 16px;
+  font-weight:  400;
+  background: #fefefb ;
+  color: #333;
+  line-height: 1.5em;
+}
+ 
+ a{
+  text-decoration:  underline;
+  text-decoration-color: #a62626;
+  text-decoration-thickness:  2px;
+  color:  #333;;
+ }
+
+a:hover{
+  color: #a62626;
+  cursor: pointer;
+
+}
+
+#menu {
+  float: right;
+  margin-top: 30px;
+  margin-right: 20px;
+  text-align: right;
+  font-size: 14px;
+  font-weight:  700;
+  width: 150px;
+  line-height: 1.23em;
+}
+
+#menu .title {
+  font-size:  14px;
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li a {
+  display: inline-block;
+  color: #a62626;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#left {
+  height: 1px;
+  float: left;
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  margin-top: 20px;
+  float: left;
+  width: 600px;
+}
+
+#content h1, #content h2, #content h3 {
+   font-family: "Vesper Libre", sans-serif;
+}
+
+#content h2 {
+  margin-top: 2em;
+}
+
+#content .byline, #content .byline a, #content .note {
+  font-size: 10px;
+  color: #aaa;
+}
+
+#content p, #content ul {
+  color: #333;
+  line-height: 18px;
+}
+
+#content sup.note {
+  display: inline-block;
+  margin-top: -5px;
+}
+
+#content p.notop {
+  margin-top: 0;
+}
+
+#content .thanks {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid #eee;
+  margin-bottom: 4em;
+  font-size: smaller;
+  color: #777;
+}
+
+#content .thanks a {
+  color: #777;
+}
+
+#content li {
+  margin-bottom: 0.7em;
+}
+
+.post + .post {
+  margin-top: 50px;
+}
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+  font-size:  10px;
+}
+sub { 
+  top: 0.4em; 
+}
+

@@ -1,0 +1,226 @@
+ <html>
+
+<head>
+
+<link rel="stylesheet" href="style.css">
+ <title>Home · Judah </title>
+</head>
+<style>
+
+#shelf {
+  width: 100%;
+}
+
+.bookholder {
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+}
+
+.line{
+  width: 450px;
+  margin-left: calc(50% - 225px);
+  height: 10px;
+  border: 0.5px solid black;
+  border-radius: 10px;
+  background: #680808;
+  box-shadow: 5px -8px 10px #AAAAAA;
+}
+
+a{
+  color: black;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.holder{
+  width: 400px;
+  margin-left: calc(50% - 200px);
+  height: 200px;
+  position: relative;
+ 
+}
+
+.lying-book{
+   width: fit-content;
+  border: solid 1px black;
+  border-radius: 4px;
+  padding: 15px 12px 15px 12px;
+  display: inline-block;
+  margin-left: 3px;
+  margin-right: 8px;
+  line-height: 0.5rem;
+  background: #ebebeb;
+  box-shadow: 5px -10px 10px -2px #AAAAAA;
+  vertical-align: bottom;
+}
+
+.book{
+  height: fit-content;
+  border: solid 1px black;
+  border-radius: 4px;
+  padding: 15px 12px 15px 8px;
+  display: inline-block;
+  writing-mode: vertical-rl;
+  margin-left: -1.9px;
+  margin-right: -2px;
+  line-height: 0.5rem;
+  background: #ebebeb;
+  box-shadow: 5px -7px 10px -2px #aaaaaa;
+   vertical-align: bottom;
+}
+
+.smalltext-book{
+  height: fit-content;
+  border: solid 1px black;
+  border-radius: 4px;
+  padding: 15px 12px 15px 8px;
+  display: inline-block;
+  writing-mode: vertical-rl;
+  margin-left: -1.9px;
+  margin-right: -2px;
+  line-height: 0.5rem;
+  background: #ebebeb;
+  box-shadow: 5px -7px 10px -2px #aaaaaa;
+   vertical-align: bottom;
+   font-size: 12px;
+}
+
+</style>
+
+<body onload="skewbook()">
+
+<head>
+  <link rel="stylesheet" href="/static/style.css">
+  <meta charset="utf-8">
+  <title>Home · Judah </title>
+</head>
+<body>
+<div id="menu">
+<span class="title">·Judah·</span>
+<ul>
+ <li><a href="/about">About</a></li>
+   <li><a href="/advice">Advice</a></li>
+  <li><a href="/aphorisms.html">Aphorisms</a></li>
+  <li><a href="/body">Body</a></li>
+  <li><a href="/collaboration">Collaboration</a></li>
+  <li><a href="/curation">Curation</a></li>
+  <li><a href="/friends">Friends</a></li>
+  <li><a href="/grants">Grants</a></li>
+  <li><a href="/ideas">Ideas</a></li>
+  <li><a href="/music">Music</a></li>
+  <li><a href="/shelf">Shelf</a>  
+  <li><a href="/writing">Writing</a></li>
+
+</ul>
+</div>
+<div id="left">&nbsp;</div>
+<div id="content">
+<h1> Shelf </h1>
+
+I think that writing on the internet is not taken as seriously as it should be. 
+
+<div id=shelf>
+<div class=holder>
+      <div class=bookholder>
+      <div class="book">
+     <a href="/MoM.html"> Meditations on <br></br> Moloch </a>
+      
+      </div>
+        
+      <div class="book">
+      <a href="/the-tower.html">The Tower </a>
+    </div>
+      
+      <div class="book">
+      <a href="/individuals-matter.html">Individuals Matter</a>
+    </div>
+        <div class="book">
+      <a href="/baldwin-in-brahman.html">Baldwin in Brahman </a>
+    </div>
+     <div class="book">
+      <a href="/baldwin-in-brahman.html">Naive Schizoanalysis</a>
+    </div>
+     <div class="smalltext-book">
+      <a href="/hard-problems.html"> You Don't Need to Work <br></br> on Hard Problems</a>
+    </div>
+
+      </div>
+    </div>
+
+    <div class=line>
+    </div>
+
+    <div class=holder>
+      <div class=bookholder>
+        
+      
+        <div class="lying-book">
+      <a href="/lena.html"> SSC Gives a Graduation Speech </a>
+    </div>
+
+        <div class="book">
+      <a href="/heck-of-a-day.html"> That's a Heck of a Day</a>
+    </div>
+
+        <div class="book">
+      <a href="/unnecessariat.html">  Unnecessariat</a>
+    </div>
+        
+    </div>
+    </div>
+    
+    <div class=line>    
+    </div>
+
+     <div class=
+       holder>
+       
+       <div class=bookholder>
+          
+         
+         <div class="book">
+      <a href="/lena.html"> Lena </a>
+    </div>
+         
+        <div class="book">
+      <a href="/slow-decay.html"> Who By Very <br></br>Slow Decay</a>
+    </div>
+          <div class="book">
+      <a href="/girardian-terror.html">  Violence and the Sacred</a>
+    </div>
+         
+          <div class="lying-book">
+      <a href="/stanford-marshmallow.html">The Stanford Marshmallow <br></br> Prison Experiment</a>
+    </div>
+    </div>
+     </div>
+    
+    <div class=line>
+    </div>
+    </div>
+</div>
+<script>
+    function skewbook(){
+ let collection = document.getElementsByClassName("book");
+for (let i = 1; i < collection.length-1; 
+    ++i) {
+
+ 
+  let ele = collection[i]
+let height = ele.offsetHeight;
+     
+   if(i%2 == 1 && collection[i+1].offsetHeight >= ele.offsetHeight){
+     ele.style.transform = "rotate(5deg)";
+
+ele.style.marginLeft = `${Math.sin(1/10) * height/2 -2.5}px`
+  ele.style.marginRight = `${Math.sin(1/10) * height/2 -2.4}px`
+   }
+  
+console.log(height) 
+
+}
+}
+</script>
+</body>
+
